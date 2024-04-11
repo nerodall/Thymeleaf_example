@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Get your name</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div style="text-align: center;">
+<h1>Ваше ФИО: <span th:text="${fio}"></span></h1>
+
+<br/>
+
+<h2>Введите имя и фамилию</h2>
+<br/>
+
+<form action="/getName" method="post">
+    Имя: <input type="text" name="firstName">
+    Фамилия: <input type="text" name="lastName">
+    <button type="submit">Добавить данные</button>
+</form>
+</div>
+</body>
+</html>
+
