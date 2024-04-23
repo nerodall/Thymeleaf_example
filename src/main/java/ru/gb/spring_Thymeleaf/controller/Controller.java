@@ -38,4 +38,14 @@ public class Controller {
         fio = firstName +" " + lastName;
         return "/getName";
     }
+
+    @GetMapping("/")
+    public String home() {
+        return "index";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "redirect:/";
+    }
 }
